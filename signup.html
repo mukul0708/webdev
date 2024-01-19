@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Money FRVR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top {
+            background-color: white;
+            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+            height: 60px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        .heading {
+            width: 80px;
+            height: 60px;
+            line-height: 60px;
+        }
+        .heading p {
+            font-size: larger;
+            color: green;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .main {
+            height: calc(100vh - 60px);
+            background-color: #f9f8f8;
+        }
+        .signup {
+            margin: auto;    
+            padding: 40px;
+            width: 60vw;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .signup h2 {
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .signup input {
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            width: 466px;
+            height: 42px;
+        }
+        .signup input::placeholder {
+            font-size: 15px;
+        }
+        .linker {
+            display: flex;
+            justify-content: space-between;
+            color: green;
+            margin-top: 10px;
+            width: 466px;
+        }
+        .signupbutton{
+            background-color: white;
+            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .signupbutton button{
+            width: 98%;
+            height: 70%;
+            border-radius: 8px;
+            background-color: #007b63;
+            line-height: 100%;
+            border: none;
+        }
+        .signupbutton button p{
+            color: white;
+            font-weight: 700;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="heading">
+            <p>Signup</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="signup">
+            <div class="orgname">
+                <h2>Earn Money FRVR</h2>
+            </div>
+            <div class="Email">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="Password">
+                <input type="text" placeholder="Password">
+            </div>
+            <div class="linker">
+                <span class="switch">Log in</span>
+                <span class="forgot">Forgot Password?</span>
+            </div>
+        </div>
+        <div class="signupbutton">
+            <button><p>Sign up</p></button>
+        </div>
+    </div>
+</body>
+</html>
