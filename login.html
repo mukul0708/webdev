@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Money FRVR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top {
+            background-color: white;
+            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+            height: 60px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        .heading {
+            width: 240px;
+            height: 60px;
+            line-height: 60px;
+        }
+        .heading p {
+            font-size: larger;
+            color: green;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .main {
+            height: calc(100vh - 60px);
+            background-color: #f9f8f8;
+        }
+        .login {
+            margin: auto;    
+            padding: 40px;
+            width: 60vw;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login h2 {
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login input {
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            width: 466px;
+            height: 42px;
+        }
+        .login input::placeholder {
+            font-size: 15px;
+        }
+        .linker {
+            display: flex;
+            justify-content: space-between;
+            color: green;
+            margin-top: 10px;
+            width: 466px;
+        }
+        .loginbutton{
+            background-color: white;
+            box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loginbutton button{
+            width: 98%;
+            height: 70%;
+            border-radius: 8px;
+            background-color: #007b63;
+            line-height: 100%;
+            border: none;
+        }
+        .loginbutton button p{
+            color: white;
+            font-weight: 700;
+            font-size: large;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var email_address = "demo@gmail.com";
+            var pass = "12345";
+            
+            var emailInput = document.querySelector('.Email input');
+            var passInput = document.querySelector('.Password input');
+            var loginButton = document.querySelector('.loginbutton button');
+
+            loginButton.addEventListener('click', function() {
+                if (emailInput.value === email_address && passInput.value === pass) {
+                    window.location.href = 'my.html';
+                } else {
+                    alert('Invalid login credentials. Please try again.');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="top">
+        <div class="heading">
+            <p>Earn Money FRVR</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="login">
+            <div class="orgname">
+                <h2>Login</h2>
+            </div>
+            <div class="Email">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="Password">
+                <input type="text" placeholder="Password">
+            </div>
+            <div class="linker">
+                <span class="switch"><a href="signup.html">Signup</a></span>
+                <span class="forgot">Forgot Password?</span>
+            </div>
+        </div>
+        <div class="loginbutton">
+            <button ><p>Log in</p></button>
+        </div>
+    </div>
+</body>
+</html>
