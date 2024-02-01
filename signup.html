@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         .top {
             background-color: white;
             box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
@@ -20,23 +22,27 @@
             display: flex;
             justify-content: center;
         }
+
         .heading {
-            width: 80px;
+            width: 240px;
             height: 60px;
             line-height: 60px;
         }
+
         .heading p {
             font-size: larger;
             color: green;
             font-weight: bolder;
             text-align: center;
         }
+
         .main {
             height: calc(100vh - 60px);
             background-color: #f9f8f8;
         }
+
         .signup {
-            margin: auto;    
+            margin: auto;
             padding: 40px;
             width: 60vw;
             height: 90%;
@@ -44,11 +50,13 @@
             flex-direction: column;
             align-items: center;
         }
+
         .signup h2 {
             font-family: Helvetica, Arial, sans-serif;
             text-align: center;
             margin-bottom: 20px;
         }
+
         .signup input {
             margin-bottom: 15px;
             padding: 10px;
@@ -57,9 +65,11 @@
             width: 466px;
             height: 42px;
         }
+
         .signup input::placeholder {
             font-size: 15px;
         }
+
         .linker {
             display: flex;
             justify-content: space-between;
@@ -67,7 +77,8 @@
             margin-top: 10px;
             width: 466px;
         }
-        .signupbutton{
+
+        .signupbutton {
             background-color: white;
             box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
             height: 10%;
@@ -75,7 +86,8 @@
             align-items: center;
             justify-content: center;
         }
-        .signupbutton button{
+
+        .signupbutton button {
             width: 98%;
             height: 70%;
             border-radius: 8px;
@@ -83,38 +95,46 @@
             line-height: 100%;
             border: none;
         }
-        .signupbutton button p{
+
+        .signupbutton button p {
             color: white;
             font-weight: 700;
             font-size: large;
         }
     </style>
+    <script>
+    </script>
 </head>
+
 <body>
     <div class="top">
         <div class="heading">
-            <p>Signup</p>
+            <p>Earn Money FRVR</p>
         </div>
     </div>
     <div class="main">
         <div class="signup">
             <div class="orgname">
-                <h2>Earn Money FRVR</h2>
+                <h2>Signup</h2>
             </div>
-            <div class="Email">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="Password">
-                <input type="text" placeholder="Password">
-            </div>
-            <div class="linker">
-                <span class="switch">Log in</span>
-                <span class="forgot">Forgot Password?</span>
-            </div>
+            <form action="connect.php" method="post">
+                <div class="Email">
+                    <input type="email" placeholder="Email" name="email" required autocomplete="email">
+                </div>
+                <div class="Password">
+                    <input type="password" placeholder="Password" name="password" required autocomplete="new-password">
+                </div>
+                <div class="linker">
+                    <span class="switch"><a href="login.html">Login</a></span>
+                    <span class="forgot">Forgot Password?</span>
+                </div>
         </div>
-        <div class="signupbutton">
-            <button><p>Sign up</p></button>
-        </div>
+                <div class="signupbutton">
+                    <button type="submit">
+                        <p>Sign up</p>
+                    </button>
+                </div>
+            </form>
     </div>
 </body>
 </html>
